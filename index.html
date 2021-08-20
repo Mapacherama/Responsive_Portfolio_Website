@@ -20,7 +20,9 @@
 <!--==================== HEADER ====================-->
 <header class="header" id="header">
     <nav class="nav container">
-        <a href="#" class="nav__logo">Mapacherama ™</a>
+        <div>
+            <a href="#" class="nav__logo">Mapacherama™</a>
+        </div>
 
         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list grid">
@@ -51,15 +53,15 @@
                 </li>
                 <li class="nav__item">
                     <a href="#contact" class="nav__link">
-                        <i class="uil uil-postcard nav__icon"></i> Contact me
+                        <i class="uil uil-postcard nav__icon"></i> Contact information
                     </a>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
                 </li>
             </ul>
-            <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
 
         <div class="nav__btns">
-<!--            theme change button-->
+            <!--            theme change button-->
             <i class="uil uil-moon change-theme" id="theme-button"></i>
 
             <div class="nav__toggle" id="nav-toggle">
@@ -166,7 +168,7 @@
                     </div>
                 </div>
                 <div class="about__buttons">
-                    <a href="assets/pdf/Jerome-Cv.pdf" class="button button--flex">
+                    <a href="assets/pdf/Jerome-Cv.pdf" target="_blank" class="button button--flex">
                         Download CV<i class="uil uil-file-download button__icon"></i>
                     </a>
                 </div>
@@ -282,6 +284,15 @@
                         </div>
                         <div class="skills__bar">
                             <span class="skills__percentage skills__java"></span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">C#</h3>
+                            <span class="skills__number">2.75/5</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__cSharp"></span>
                         </div>
                     </div>
                     <div class="skills__data">
@@ -597,7 +608,8 @@
                     <h2 class="project__title">What the future has in store for me... </h2>
                     <p class="project__description">A blog to add to my portfolio where I share my running, and workout
                         progress.</p>
-                    <a href="https://github.com/Mapacherama/Blog_project" target="_blank" class="button button--flex button--white">Github link
+                    <a href="https://github.com/Mapacherama/Blog_project" target="_blank"
+                       class="button button--flex button--white">Github link
                         <i class="uil uil-github project__icon button__icon"></i>
                     </a>
                 </div>
@@ -627,8 +639,10 @@
                         </div>
 
                         <div>
-                            <p class="testimonial__description">“I don’t stop when I’m tired, I stop when I’m done.”</p>
-                            <i class="uil uil-comment-upload inspirational__icon-quote"> </i>
+                            <p class="inspirational__description">“I don’t stop when I’m tired, I stop when I’m done.”<i
+                                    class="uil uil-comment-upload inspirational__icon-quote"> </i></p>
+
+
                         </div>
                     </div>
                     <div class="inspirational__buttons-video">
@@ -651,13 +665,14 @@
                         </div>
 
                         <div>
-                            <p class="testimonial__description">“No, I don't ever give up. I'd
-                                have to be dead or completely incapacitated”</p>
-                            <i class="uil uil-comment-upload inspirational__icon-quote"> </i>
+                            <p class="inspirational__description">“No, I don't ever give up. I'd
+                                have to be dead or completely incapacitated”<i
+                                        class="uil uil-comment-upload inspirational__icon-quote"> </i></p>
                         </div>
                     </div>
                     <div class="inspirational__buttons-video">
-                        <a href="https://youtu.be/43TmnIaL3n4" target="_blank" class="button button--flex inspirational__button">
+                        <a href="https://youtu.be/43TmnIaL3n4" target="_blank"
+                           class="button button--flex inspirational__button">
                             Inspirational video
                             <i class="uil uil-video"></i>
                         </a>
@@ -677,11 +692,13 @@
                     </div>
                     <div>
                         <div>
-                            <p class="testimonial__description">“Don’t expect to be motivated
+                            <p class="inspirational__description">“Don’t expect to be motivated
                                 every day to get out there and make things happen. You won’t be. Don’t count on
-                                motivation. Count on Discipline.”</p>
+                                motivation. Count on Discipline.”<i
+                                        class="uil uil-comment-upload inspirational__icon-quote"> </i></p>
+
                         </div>
-                        <i class="uil uil-comment-upload inspirational__icon-quote"> </i>
+
                     </div>
                     <div class="inspirational__buttons-video">
                         <a href="https://youtu.be/IdTMDpizis8" target="_blank" class="button button--flex">
@@ -697,11 +714,10 @@
 
     <!--==================== CONTACT ME ====================-->
     <section class="contact section" id="contact">
-        <h2 class="section__title">Contact Me</h2>
+        <h2 class="section__title">Contact Information</h2>
         <span class="section__subtitle">Get in touch</span>
 
         <div class="contact__container container grid">
-            <div>
                 <div class="contact__information">
                     <i class="uil uil-mobile-android contact__icon"></i>
 
@@ -735,39 +751,41 @@
                             <span class="contact__subtitle">An internet near you. Or... Dirkshorn, North Holland, The Netherlands </span>
                         </div>
                     </div>
-                </div>
             </div>
 
-            <div>
-                <h3 class="contact__title">Or you could just fill in this form...</h3>
-            </div>
+            <!--<div class="contact__container">
+                <h3 class="contact__title margin-bottom">Or you could just fill in this form...</h3>
 
-            <form action="" class="contact__form grid">
-                <div class="contact__inputs grid">
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Name</label>
-                        <input type="text" class="contact__input">
-                    </div>
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Email</label>
-                        <input type="email" class="contact__input">
-                    </div>
-                </div>
-                <div class="contact__content">
-                    <label for="" class="contact__label">Subject</label>
-                    <input type="text" class="contact__input">
-                </div>
-                <div class="contact__content">
-                    <label for="" class="contact__label">Mensaje</label>
-                    <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-                </div>
+                &lt;!&ndash;<form action="" class="contact__form">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="email" class="contact__input">
+                        </div>
+                        <div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Subject</label>
+                                <input type="text" class="contact__input">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Mensaje</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+                        <div>
+                            <a href="#" class="button button&#45;&#45;flex">Send Message
+                                <i class="uil uil-envelope-send button__icon"></i>
+                            </a>
+                        </div>
 
-                <div>
-                    <a href="#" class="button button--flex">Send Message
-                        <i class="uil uil-envelope-send button__icon"></i>
-                    </a>
-                </div>
-            </form>
+                    </div>
+
+                </form>&ndash;&gt;
+            </div>-->
         </div>
     </section>
 </main>
@@ -809,7 +827,7 @@
                 </li>
                 <li>
                     <a href="#contact" class="footer__link">
-                        Contact Me
+                        Contact Information
                     </a>
                 </li>
             </ul>
