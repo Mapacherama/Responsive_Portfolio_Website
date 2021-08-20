@@ -959,7 +959,7 @@ img {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 415px) {
     .container {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
@@ -1082,14 +1082,22 @@ img {
         display: none;
     }
 
-    .nav__item {
-        margin-left: var(--mb-2);
-        margin-bottom: 0;
-    }
-
     .nav__list {
         display: flex;
         column-gap: 2rem;
+    }
+
+    .nav__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: var(--small-font-size);
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+    }
+
+    .nav__link:hover {
+        color: var(--first-color);
     }
 
     .nav__menu {
