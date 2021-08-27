@@ -9,3 +9,4 @@ This is the repository for my own personal portfolio website, in the future I'm 
 - Add todo list web API
 - TODO at website language changer
 - TODO Add some sort of weather API
+- TODO add metatags.
